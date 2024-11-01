@@ -1,0 +1,158 @@
+<div class='post-body entry-content' id='post-body-514289505646979333' itemprop='description articleBody'>
+<!--DOCTYPE html-->
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>  سلسلة بن 10  </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+<!-- Iconos -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+<style type="text/css">
+*{user-select:none;margin:0;padding:0;box-sizing:border-box;outline:none;user-select:none;}
+body{background:black;font-family:'Kanit', sans-serif;}
+play{background:yellow;color: yellow;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;}
+play,h3{color:gray;font-size:18px;margin-top:-5px;}
+menu{background:transparent;color:#fff;left:0;right:0;height:.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;padding:10px;}
+menu,a{background:transparent;color:#fff;left:0;right:0;height:2.5em;display:flex;flex-direction:row;align-items:center;justify-content:space-between;text-decoration:none;cursor:pointer;padding:30px;}
+.titulo{color:#fff;font-family:'Kanit', sans-serif;font-size:20px;padding:5px;} /* Adjusted font size */
+.bt1{background: black;color:#fff;font-size:15px;text-align:center;padding:5px;border:1px solid yellow;border-radius:10px;font-family:'Kanit', sans-serif;width:85%;height:35px;margin:3px;}
+.container{}
+.container img{display:block;margin:auto;border-radius:7px;margin-top:5px;}
+.frame {background: transparent; border: 1px solid yellow; padding: 20px; border-radius: 10px; margin: 10px; text-align: center;}
+.frame-title {font-size: 20px; color: white; margin-bottom: 5px;} /* Adjusted margin-bottom */
+.frame-description {font-size: 12px; color: #ddd; margin-bottom: 10px;} /* New style for description */
+.checkbox-container {display: flex; align-items: center; justify-content: center; margin-top: 5px;}
+.checkbox-label {font-size: 14px; color: #ddd; margin-left: 5px;}
+.checkbox-input {width: 20px; height: 20px; cursor: pointer;}
+.icon {font-size: 20px; margin-left: 5px;}
+.hidden {display: none;}
+</style>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+    // Initialize checkboxes based on localStorage
+    const episodes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+    episodes.forEach(episode => {
+        const checkbox = document.getElementById(`episode${episode}`);
+        const correctIcon = document.getElementById(`correct${episode}`);
+        const incorrectIcon = document.getElementById(`incorrect${episode}`);
+        const watched = localStorage.getItem(`episode${episode}`) === "true";
+
+        checkbox.checked = watched;
+        if (watched) {
+            correctIcon.classList.remove('hidden');
+            incorrectIcon.classList.add('hidden');
+        } else {
+            correctIcon.classList.add('hidden');
+            incorrectIcon.classList.remove('hidden');
+        }
+    });
+});
+
+function toggleIcon(checkbox, correctIconId, incorrectIconId) {
+    const correctIcon = document.getElementById(correctIconId);
+    const incorrectIcon = document.getElementById(incorrectIconId);
+
+    if (checkbox.checked) {
+        correctIcon.classList.remove('hidden');
+        incorrectIcon.classList.add('hidden');
+    } else {
+        correctIcon.classList.add('hidden');
+        incorrectIcon.classList.remove('hidden');
+    }
+
+    // Store the checkbox state in localStorage
+    localStorage.setItem(checkbox.id, checkbox.checked);
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+</div>
+
+<div class="frame">
+    <div class="frame-title"> بن 10 كلاسيك </div>
+     <div class="frame-description">| مدبلج بالعربية , 2005 |</div> 
+     
+    <div class="frame-description">تتبع السلسلة مغامرات الفتى بن تينيسون الذي يكتشف جهازًا غريبًا يسمى أومنيتريكس يمنحه القدرة على التحول إلى مجموعة متنوعة من الكائنات الفضائية. يستخدم بن قوته الجديدة لمحاربة الأشرار وحل المشاكل في جميع أنحاء العالم</div> <!-- Description added -->
+    <center>
+        <a href="https://tdrsvs.github.io/ben-10-classic-/"><button class="bt1"><i class="fas fa-play-circle"> مشاهدة </i></button></a>
+        <div class="checkbox-container">
+            <input type="checkbox" class="checkbox-input" id="episode1" onclick="toggleIcon(this, 'correct1', 'incorrect1')">
+            <label for="episode1" class="checkbox-label">تمت المشاهدة</label>
+            <i id="correct1" class="fas fa- icon hidden" style="color: green;"></i>
+            <i id="incorrect1" class="fas fa- icon" style="color: red;"></i>
+        </div>
+    </center>
+</div>
+
+
+<div class="frame">
+    <div class="frame-title"> بن 10 ألين فورس  </div>
+      <div class="frame-description">| مدبلج بالعربية , 2008  |</div> 
+    <div class="frame-description">تتبع السلسلة بن الذي يواجه تحولًا هامًا حيث ينمو ويتطور إلى مراهق، مستعدًا لمواجهة التحديات والتهديدات الجديدة التي تهد العالم. برفقة أصدقائه غوين و جوي و كيفن، يتعين عليه الاستعداد لمواجهة المخاطر وحل المشكلات بشجاعة وتفانٍ. سيكون عليهم العمل كفريق واحد متكامل لمواجهة الأعداء والمحافظة على سلامة الكون لكن هل سيحصل ذلك حقا</div> <!-- Description added -->
+    <center>
+        <a href="https://tdrsvs.github.io/ben-10-alien-force/"><button class="bt1"><i class="fas fa-play-circle"> مشاهدة </i></button></a>
+        <div class="checkbox-container">
+            <input type="checkbox" class="checkbox-input" id="episode2" onclick="toggleIcon(this, 'correct2', 'incorrect2')">
+            <label for="episode2" class="checkbox-label">تمت المشاهدة</label>
+            <i id="correct2" class="fas fa- icon hidden" style="color: green;"></i>
+            <i id="incorrect2" class="fas fa- icon" style="color: red;"></i>
+        </div>
+    </center>
+</div>
+
+
+<div class="frame">
+    <div class="frame-title"> بن 10 ألتيمت ألين </div>
+  <div class="frame-description">| مدبلج بالعربية , 2010 |</div> 
+    <div class="frame-description">يكتشف بين  قدرات جديدة مدهشة في الأومنيتريكس  ويجد نفسه أمام تحديات صعبة جدا  في حين يغوص في أسرار الجهاز الغامض ويسعى لكشف مصدر قوته الفائقة لينمو ويتطور بحكمة وصلابة</div> <!-- Description added -->
+    <center>
+        <a href="https://fanshome01.github.io/Ben-10-Ultimate-Alien/"><button class="bt1"><i class="fas fa-play-circle"> مشاهدة </i></button></a>
+        <div class="checkbox-container">
+            <input type="checkbox" class="checkbox-input" id="episode3" onclick="toggleIcon(this, 'correct3', 'incorrect3')">
+            <label for="episode3" class="checkbox-label">تمت المشاهدة</label>
+            <i id="correct3" class="fas fa- icon hidden" style="color: green;"></i>
+            <i id="incorrect3" class="fas fa- icon" style="color: red;"></i>
+        </div>
+    </center>
+</div>
+
+
+
+
+<div class="frame">
+    <div class="frame-title">  بن 10 اومنيفرس </div>
+  <div class="frame-description">| مدبلج بالعربية , 2012 |</div> 
+    <div class="frame-description">تقدم السلسلة عالمًا جديدًا مع تصميم شخصيات جديدة ومغامرات جديدة تتنوع بين المرح والإثارة</div> <!-- Description added -->
+    <center>
+        <a href="https://fanshome01.github.io/Ben-10-Omniverse-/"><button class="bt1"><i class="fas fa-play-circle"> مشاهدة </i></button></a>
+        <div class="checkbox-container">
+            <input type="checkbox" class="checkbox-input" id="episode4" onclick="toggleIcon(this, 'correct4', 'incorrect4')">
+            <label for="episode4" class="checkbox-label">تمت المشاهدة</label>
+            <i id="incorrect4" class="fas fa- icon" style="color: red;"></i>
+            <i id="correct4" class="fas fa- icon hidden" style="color: green;"></i>
+        </div>
+    </center>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+  
+  
